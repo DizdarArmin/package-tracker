@@ -14,7 +14,7 @@ export default function Packages() {
   if (loading) return <Loading />;
 
   return (
-    <div className="h-100">
+    <div>
       {packages && (
         <div className="container">
           <div className="grid">

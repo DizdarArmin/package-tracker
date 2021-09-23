@@ -1,4 +1,3 @@
-import "./App.css";
 import "./styles/layout.scss";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";

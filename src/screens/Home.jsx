@@ -13,23 +13,23 @@ export default function Home() {
   useEffect(() => {
     gsap.fromTo(
       titleRef.current,
-      { opacity: 0, y: -1000 },
+      { opacity: 0, y: -200 },
       { opacity: 1, y: 0, duration: 2 }
     );
     gsap.fromTo(
       subtitleRefLeft.current,
-      { x: -500, opacity: 0 },
-      { x: 0, opacity: 1, duration: 2, delay: 2 }
+      { x: "-200", opacity: 0 },
+      { x: "0", opacity: 1, duration: 2, delay: 2 }
     );
     gsap.fromTo(
       subtitleRefRight.current,
-      { x: 500, opacity: 0 },
-      { x: 0, opacity: 1, duration: 2, delay: 2 }
+      { y: -200, opacity: 0 },
+      { y: 0, opacity: 1, duration: 1, delay: 3 }
     );
     gsap.fromTo(
       buttonRef.current,
       { opacity: 0 },
-      { opacity: 1, duration: 2, delay: 2 }
+      { opacity: 1, duration: 1, delay: 4 }
     );
   });
   return (
