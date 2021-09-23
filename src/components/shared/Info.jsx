@@ -1,7 +1,7 @@
 import Verifed from "./Verifed";
 import DateTime from "./DateTime";
 import Text from "./Text";
-import { language } from "../components/Atom";
+import { language } from "./Atom";
 import { useRecoilState } from "recoil";
 
 export default function Info({ sender, eta, verified }) {

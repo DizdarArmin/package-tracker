@@ -1,4 +1,4 @@
-import { language } from "../components/Atom";
+import { language } from "./Atom";
 import { useRecoilState } from "recoil";
 
 export default function Status({ status }) {
@@ -21,9 +21,8 @@ export default function Status({ status }) {
   }
   return (
     <div className="status">
+      <i className={`fa-3x icon ${iconClass}`}></i>
       <h3 className="status">
-        <i className={`fa-3x icon ${iconClass}`}></i>
-        <br />
         <span className="margin-b">{packageStatus}</span>
       </h3>
     </div>

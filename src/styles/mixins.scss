@@ -1,6 +1,12 @@
-@media only screen and (min-width: $mobile) {
+@media only screen and (max-width: $mobile) {
   .grid {
     grid-template-columns: repeat((1, 1fr));
+  }
+  .heading {
+    font-size: 16px !important;
+  }
+  .home h1 {
+    font-size: 24px;
   }
 }
 @media only screen and (min-width: $tablet) {

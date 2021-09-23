@@ -1,7 +1,7 @@
-import translations from "../lang/translations.json";
+import en from "../../lang/en.json";
 import { atom } from "recoil";
 export const language = atom({
   key: "language",
-  default: translations.en,
+  default: en,
   dangerouslyAllowMutability: true,
 });

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { language } from "../components/Atom";
+import { language } from "../components/shared/Atom";
 import { useRecoilState } from "recoil";
 import { useRef, useEffect } from "react";
 import { gsap } from "gsap";

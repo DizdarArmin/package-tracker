@@ -1,5 +1,5 @@
 import { useRecoilState } from "recoil";
-import { language } from "../components/Atom";
+import { language } from "./Atom";
 
 export default function Verifed({ isVerifed }) {
   const [lang] = useRecoilState(language);

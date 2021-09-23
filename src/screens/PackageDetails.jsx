@@ -2,14 +2,14 @@ import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { load } from "../services/LocalStorage";
 import { useRecoilState } from "recoil";
-import { language } from "../components/Atom";
+import { language } from "../components/shared/Atom";
 
-import Verified from "../components/Verifed";
-import Status from "../components/Status";
-import DateTime from "../components/DateTime";
-import Phone from "../components/Phone";
-import Column from "../components/Column";
-import Text from "../components/Text";
+import Verified from "../components/shared/Verifed";
+import Status from "../components/shared/Status";
+import DateTime from "../components/shared/DateTime";
+import Phone from "../components/shared/Phone";
+import Column from "../components/shared/Column";
+import Text from "../components/shared/Text";
 import Map from "../components/Map";
 
 export default function PackageDetails() {

@@ -7,6 +7,8 @@ import useFetch from "../hooks/useFetch";
 export default function Packages() {
   const URL = `https://my.api.mockaroo.com/insta-orders.json?key=e49e6840`;
   const { data: packages, error, loading } = useFetch(URL);
+  if (true) {
+  }
   if (packages) save("packages", packages);
   if (error) throw error;
   if (loading) return <Loading />;

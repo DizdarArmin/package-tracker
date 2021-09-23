@@ -1,4 +1,4 @@
-import { getDate, getTime } from "../services/DateParse";
+import { getDate, getTime } from "../../services/DateParse";
 
 export default function DateTime({ date, of }) {
   return (

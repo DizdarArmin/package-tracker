@@ -12,8 +12,6 @@
 }
 .card {
   background-color: whitesmoke;
-  height: fit-content;
-  min-height: 320px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -50,4 +48,5 @@
 .grid {
   display: grid;
   grid-gap: 1.5rem;
+  grid-row-gap: 1.5rem;
 }

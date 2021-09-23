@@ -23,8 +23,9 @@ export default function useFetch(url) {
         setLoading(false);
       }
     };
+
     fetchData();
   }, [url]);
 
-  return { data, error, loading };
+  return { data, loading, error };
 }

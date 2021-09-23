@@ -1,0 +1,23 @@
+{
+  "name": "Svenska",
+  "symbol": "🇸🇪",
+  "homeTitle": "Välkommen till Deliware",
+  "homeSubtitleOne": "Du beställer",
+  "homeSubtitleTwo": "vi levererar!",
+  "homeButton": "Visa mina paket",
+  "loading": "Laddar",
+  "detailsHeading": "Paketinformation",
+  "from": "Från",
+  "packageID": "Packet ID",
+  "update": "Sista uppdatering",
+  "to": "Till",
+  "pickup": "Hämta vid",
+  "note": "Anteckning",
+  "delivered": "Leverarat",
+  "onTheWway": "På väg",
+  "orderInfoReceived": "Beställningsinformation mottagen",
+  "readyForPickUp": "Klar för att hämta upp",
+  "showDetails": "Visa mer",
+  "arrival": "Leverans tid",
+  "verified": "Verifierad"
+}

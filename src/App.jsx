@@ -6,14 +6,14 @@ import Home from "./screens/Home";
 import PackageDetails from "./screens/PackageDetails";
 import Packages from "./screens/Packages";
 
-import { language } from "./components/Atom";
+import { language } from "./components/shared/Atom";
 import { useRecoilState } from "recoil";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { load } from "./services/LocalStorage";
 import { useEffect } from "react";
 
 export default function App() {
-  const [lang, setLang] = useRecoilState(language);
+  const [, setLang] = useRecoilState(language);
   let localLanguage = load("language");
 
   useEffect(() => {
