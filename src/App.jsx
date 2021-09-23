@@ -1,6 +1,7 @@
 import "./styles/layout.scss";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/shared/ScrollToTop";
 import Home from "./screens/Home";
 import PackageDetails from "./screens/PackageDetails";
 import Packages from "./screens/Packages";
@@ -24,11 +25,13 @@ export default function App() {
   return (
     <Router>
       <Navbar />
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/packages" exact component={Packages} />
-        <Route path="/packages/:id" component={PackageDetails} />
-      </Switch>
+      <ScrollToTop>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/packages" exact component={Packages} />
+          <Route path="/packages/:id" component={PackageDetails} />
+        </Switch>
+      </ScrollToTop>
       <Footer />
     </Router>
   );
