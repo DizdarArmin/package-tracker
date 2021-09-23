@@ -8,7 +8,7 @@ export default function Map({ lat, lng, locationName }) {
         yesIWantToUseGoogleMapApiInternals
         bootstrapURLKeys={{ key: process.env.REACT_APP_GOOGLE_MAPS_API_KEY }}
         defaultCenter={{ lat, lng }}
-        defaultZoom={13}
+        defaultZoom={15}
       >
         <MapMarker lat={lat} lng={lng} locationName={locationName} />
       </GoogleMapReact>

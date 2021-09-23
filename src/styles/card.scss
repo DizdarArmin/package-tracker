@@ -50,3 +50,14 @@
   grid-gap: 1.5rem;
   grid-row-gap: 1.5rem;
 }
+
+.notes:hover {
+  cursor: pointer;
+}
+.notes {
+  text-decoration: underline;
+}
+.note {
+  font-size: 24px;
+  text-align: center;
+}

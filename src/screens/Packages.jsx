@@ -12,6 +12,7 @@ export default function Packages() {
   if (packages) save("packages", packages);
   if (error) throw error;
   if (loading) return <Loading />;
+  console.log(packages);
 
   return (
     <div>
