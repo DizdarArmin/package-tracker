@@ -6,14 +6,14 @@ import sv from "../lang/sv.json";
 import en from "../lang/en.json";
 
 export default function Navbar() {
-  const [lang, setLang] = useRecoilState(language);
+  const [translation, setTranslation] = useRecoilState(language);
 
   function switchLanguge() {
-    if (lang.name === "English") {
-      setLang(sv);
+    if (translation.name === "English") {
+      setTranslation(sv);
       save("language", sv);
-    } else if (lang.name === "Svenska") {
-      setLang(en);
+    } else if (translation.name === "Svenska") {
+      setTranslation(en);
       save("language", en);
     }
   }
@@ -24,7 +24,7 @@ export default function Navbar() {
         <div className="navbar-brand">Deliware</div>
       </Link>
       <div onClick={() => switchLanguge()} className="language">
-        {lang.symbol}
+        {translation.symbol}
       </div>
     </nav>
   );

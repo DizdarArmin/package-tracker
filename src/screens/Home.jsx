@@ -5,7 +5,7 @@ import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 
 export default function Home() {
-  const [lang] = useRecoilState(language);
+  const [translation] = useRecoilState(language);
   const titleRef = useRef();
   const subtitleRefLeft = useRef();
   const subtitleRefRight = useRef();
@@ -34,15 +34,15 @@ export default function Home() {
   });
   return (
     <div className="home">
-      <h1 ref={titleRef}>{lang.homeTitle}</h1>
+      <h1 ref={titleRef}>{translation.homeTitle}</h1>
       <div className="slogan margin-b">
-        <h2 ref={subtitleRefLeft}>{lang.homeSubtitleOne}</h2>
-        <h2 ref={subtitleRefRight}>{lang.homeSubtitleTwo}</h2>
+        <h2 ref={subtitleRefLeft}>{translation.homeSubtitleOne}</h2>
+        <h2 ref={subtitleRefRight}>{translation.homeSubtitleTwo}</h2>
       </div>
 
       <Link to="/packages">
         <div ref={buttonRef} className="button">
-          {lang.homeButton}
+          {translation.homeButton}
         </div>
       </Link>
     </div>

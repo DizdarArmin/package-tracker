@@ -1,7 +1,13 @@
 import GoogleMapReact from "google-map-react";
 import MapMarker from "./MapMarker";
 
-export default function Map({ lat, lng, locationName }) {
+export default function Map({ parcel }) {
+  const {
+    location_coordinate_latitude: lat,
+    location_coordinate_longitude: lng,
+    location_name,
+  } = parcel;
+
   return (
     <div className="map">
       <GoogleMapReact
@@ -10,7 +16,7 @@ export default function Map({ lat, lng, locationName }) {
         defaultCenter={{ lat, lng }}
         defaultZoom={15}
       >
-        <MapMarker lat={lat} lng={lng} locationName={locationName} />
+        <MapMarker lat={lat} lng={lng} locationName={location_name} />
       </GoogleMapReact>
     </div>
   );

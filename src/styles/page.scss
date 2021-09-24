@@ -41,20 +41,16 @@ body {
 }
 .marker {
   color: $accent;
-  background-color: red;
+  display: flex;
 }
 .heading {
   color: whitesmoke;
   margin: 16px 0;
 }
 
-.h-100 {
-  min-height: 100vh;
-}
-
 .slogan {
   display: flex;
-}
-.slogan h2 {
-  margin: 0 2px;
+  h2 {
+    margin: 0 2px;
+  }
 }

@@ -1,16 +1,14 @@
-import Verifed from "./Verifed";
+import Verified from "./Verified";
 import DateTime from "./DateTime";
 import Text from "./Text";
-import { language } from "./Atom";
-import { useRecoilState } from "recoil";
 
-export default function Info({ sender, eta, verification_required }) {
-  const [lang] = useRecoilState(language);
+export default function Info({ parcel, translation }) {
+  const { sender, eta, verification_required } = parcel;
   return (
     <div className="sender">
-      <Text is={sender} label={lang.from} />
-      <DateTime of={lang.arrival} date={eta} />
-      <Verifed verification_required={verification_required} />
+      <Text is={sender} label={translation.from} />
+      <DateTime of={translation.arrival} date={eta} />
+      <Verified verification_required={verification_required} />
     </div>
   );
 }

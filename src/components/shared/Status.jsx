@@ -1,22 +1,22 @@
 import { language } from "./Atom";
 import { useRecoilState } from "recoil";
 
-export default function Status({ status }) {
-  const [lang] = useRecoilState(language);
+export default function Status({ parcel, translation }) {
+  const { status } = parcel;
   let packageStatus;
   let iconClass;
 
   if (status === "delivered") {
-    packageStatus = lang.delivered;
+    packageStatus = translation.delivered;
     iconClass = `fas fa-check-circle`;
   } else if (status === "on-the-way") {
-    packageStatus = lang.onTheWway;
+    packageStatus = translation.onTheWway;
     iconClass = "fas fa-shipping-fast";
   } else if (status === "order-info-received") {
-    packageStatus = lang.orderInfoReceived;
+    packageStatus = translation.orderInfoReceived;
     iconClass = `fas fa-info-circle`;
   } else if (status === "ready-for-pickup") {
-    packageStatus = lang.readyForPickUp;
+    packageStatus = translation.readyForPickUp;
     iconClass = `fas fa-box-open`;
   }
   return (
