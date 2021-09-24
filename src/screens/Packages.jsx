@@ -7,7 +7,7 @@ import { useParams } from "react-router-dom";
 import PageNotFound from "./PageNotFound";
 
 export default function Packages() {
-  const { id, packages } = useParams();
+  const { packages } = useParams();
   const URL = `https://my.api.mockaroo.com/insta-orders.json?key=e49e6840`;
   const { data, error, loading } = useFetch(URL);
 
