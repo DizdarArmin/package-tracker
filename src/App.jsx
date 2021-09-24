@@ -13,12 +13,12 @@ import { load } from "./services/LocalStorage";
 import { useEffect } from "react";
 
 export default function App() {
-  const [, setLang] = useRecoilState(language);
-  let localLanguage = load("language");
+  const [, setTranslation] = useRecoilState(language);
+  const localLanguage = load("language");
 
   useEffect(() => {
     if (localLanguage) {
-      setLang(localLanguage);
+      setTranslation(localLanguage);
     }
   }, []);
 
@@ -28,7 +28,7 @@ export default function App() {
       <ScrollToTop>
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/packages" exact component={Packages} />
+          <Route path="/:packages" exact component={Packages} />
           <Route path="/packages/:id" component={PackageDetails} />
         </Switch>
       </ScrollToTop>

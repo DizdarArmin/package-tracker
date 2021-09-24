@@ -17,6 +17,9 @@ body {
     text-shadow: 2px 2px 5px $primary-dark;
   }
 }
+.h-100 {
+  min-height: 100vh;
+}
 
 .button {
   display: flex;

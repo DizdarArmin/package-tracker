@@ -19,20 +19,20 @@ export default function Home() {
     );
     gsap.fromTo(
       subtitleRefLeft.current,
-      { x: "-200", opacity: 0 },
+      { x: -200, opacity: 0 },
       { x: "0", opacity: 1, duration: 2, delay: 2 }
     );
     gsap.fromTo(
       subtitleRefRight.current,
       { y: -200, opacity: 0 },
-      { y: 0, opacity: 1, duration: 1, delay: 3 }
+      { y: 0, opacity: 1, duration: 2, delay: 4 }
     );
     gsap.fromTo(
       buttonRef.current,
       { opacity: 0 },
-      { opacity: 1, duration: 1, delay: 4 }
+      { opacity: 1, duration: 1, delay: 5 }
     );
-  });
+  }, []);
   return (
     <Vanta>
       <h1 ref={titleRef}>{translation.homeTitle}</h1>
