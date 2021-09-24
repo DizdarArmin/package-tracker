@@ -1,6 +1,3 @@
-import { language } from "./Atom";
-import { useRecoilState } from "recoil";
-
 export default function Status({ parcel, translation }) {
   const { status } = parcel;
   let packageStatus;

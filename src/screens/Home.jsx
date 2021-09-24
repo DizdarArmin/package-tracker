@@ -3,6 +3,7 @@ import { language } from "../components/shared/Atom";
 import { useRecoilState } from "recoil";
 import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
+import Vanta from "../components/shared/Vanta";
 
 export default function Home() {
   const [translation] = useRecoilState(language);
@@ -33,7 +34,7 @@ export default function Home() {
     );
   });
   return (
-    <div className="home">
+    <Vanta>
       <h1 ref={titleRef}>{translation.homeTitle}</h1>
       <div className="slogan margin-b">
         <h2 ref={subtitleRefLeft}>{translation.homeSubtitleOne}</h2>
@@ -45,6 +46,6 @@ export default function Home() {
           {translation.homeButton}
         </div>
       </Link>
-    </div>
+    </Vanta>
   );
 }

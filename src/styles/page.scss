@@ -14,12 +14,14 @@ body {
   h1,
   h2 {
     margin-bottom: 24px;
+    text-shadow: 2px 2px 5px $primary-dark;
   }
 }
 
 .button {
   display: flex;
   justify-content: center;
+  align-items: center;
   min-width: 144px;
   background-color: $accent;
   color: white;
@@ -28,9 +30,6 @@ body {
   border-radius: 50px;
 }
 .btn-details {
-  max-width: 200px;
-  display: flex;
-  justify-content: center;
   margin: 0 auto;
 }
 .map {
