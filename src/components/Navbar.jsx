@@ -4,6 +4,7 @@ import { useRecoilState } from "recoil";
 import { save } from "../services/LocalStorage";
 import sv from "../lang/sv.json";
 import en from "../lang/en.json";
+import ba from "../lang/ba.json";
 
 export default function Navbar() {
   const [translation, setTranslation] = useRecoilState(language);
@@ -13,6 +14,9 @@ export default function Navbar() {
       setTranslation(sv);
       save("language", sv);
     } else if (translation.name === "Svenska") {
+      setTranslation(ba);
+      save("language", ba);
+    } else if (translation.name === "Bosanski") {
       setTranslation(en);
       save("language", en);
     }

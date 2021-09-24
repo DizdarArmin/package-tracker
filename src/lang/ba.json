@@ -1,0 +1,23 @@
+{
+  "name": "Bosanski",
+  "symbol": "🇧🇦",
+  "homeTitle": "Dobro došli na Deliware",
+  "homeSubtitleOne": "Vi naručite",
+  "homeSubtitleTwo": "mi dostavimo!",
+  "homeButton": "Prikaži moje pakete",
+  "loading": "Učitavam",
+  "detailsHeading": "Informacije o paketu",
+  "from": "Šalje",
+  "packageID": "ID Paketa",
+  "update": "Posljednje informacije",
+  "to": "Prima",
+  "pickup": "Podignuti u",
+  "note": "Prikaži zabilješke",
+  "delivered": "Dostavljeno",
+  "onTheWway": "U transportu",
+  "orderInfoReceived": "Informacije o narudžbini primljenje",
+  "readyForPickUp": "Spremno za podizanje",
+  "showDetails": "Pogledaj više",
+  "arrival": "Vrijeme isporuke",
+  "verified": "Potvrđeno"
+}
