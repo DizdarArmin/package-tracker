@@ -1,5 +1,5 @@
 export default function Status({ parcel, translation }) {
-  const { status } = parcel;
+  const { status, verification_required } = parcel;
   let packageStatus;
   let iconClass;
 
@@ -22,6 +22,7 @@ export default function Status({ parcel, translation }) {
       <h3 className="status">
         <span className="margin-b">{packageStatus}</span>
       </h3>
+      {verification_required && <h5>{translation.verification}</h5>}
     </div>
   );
 }

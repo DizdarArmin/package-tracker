@@ -19,5 +19,6 @@
   "readyForPickUp": "Klar för att hämta upp",
   "showDetails": "Visa mer",
   "arrival": "Leverans tid",
-  "verified": "Verifierad"
+  "verified": "Verifierad",
+  "verification": "Ta med ID kort eller nåt annat form av identifiering."
 }

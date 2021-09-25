@@ -1,4 +1,3 @@
-import Verified from "./Verified";
 import DateTime from "./DateTime";
 import Text from "./Text";
 
@@ -8,7 +7,6 @@ export default function Info({ parcel, translation }) {
     <div className="sender">
       <Text is={sender} label={translation.from} />
       <DateTime of={translation.arrival} date={eta} />
-      <Verified verification_required={verification_required} />
     </div>
   );
 }

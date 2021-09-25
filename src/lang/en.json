@@ -19,5 +19,6 @@
   "readyForPickUp": "Ready for pick up",
   "showDetails": "See more",
   "arrival": "Delivery time",
-  "verified": "Verified"
+  "verified": "Verified",
+  "verification": "Bring ID card or some other document for identification."
 }
