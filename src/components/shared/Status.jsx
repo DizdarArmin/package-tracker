@@ -19,10 +19,9 @@ export default function Status({ parcel, translation }) {
   return (
     <div className="status">
       <i className={`fa-3x icon ${iconClass}`}></i>
-      <h3 className="status">
+      <h3>
         <span className="margin-b">{packageStatus}</span>
       </h3>
-      {verification_required && <h5>{translation.verification}</h5>}
     </div>
   );
 }
