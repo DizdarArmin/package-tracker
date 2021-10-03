@@ -11,12 +11,11 @@ export default function Packages() {
   const URL = `https://my.api.mockaroo.com/insta-orders.json?key=e49e6840`;
   const { data, error, loading } = useFetch(URL);
 
-  if (packages !== "packages") {
-    return <PageNotFound />;
-  }
+  if (packages !== "packages") return <PageNotFound />;
   if (loading) return <Loading />;
   if (data) save("packages", data);
   if (error) throw error;
+
   return (
     <div className="h-100">
       {data && (

@@ -5,6 +5,8 @@ import { gsap } from "gsap";
 export default function Loading() {
   const [lang] = useRecoilState(language);
   const spinner = useRef();
+
+  // here is ok to keep the animation info inside as is only 1
   useEffect(() => {
     gsap.to(spinner.current, {
       rotation: "360",

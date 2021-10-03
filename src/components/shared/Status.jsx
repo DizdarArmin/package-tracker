@@ -3,6 +3,14 @@ export default function Status({ parcel, translation }) {
   let packageStatus;
   let iconClass;
 
+  // Redability, use a switch statement to make it easier to read -1
+  // example:
+  switch (status) {
+    case "delivered":
+      packageStatus = translation.delivered;
+      iconClass = "fas fa-check-circle";
+  }
+
   if (status === "delivered") {
     packageStatus = translation.delivered;
     iconClass = `fas fa-check-circle`;

@@ -5,6 +5,7 @@ import { load } from "../services/LocalStorage";
 import Details from "../components/Details";
 import PageNotFound from "./PageNotFound";
 
+// This page should be merged with the Detail component -1
 export default function PackageDetails() {
   const { id } = useParams();
   const [packages] = useState(load("packages"));

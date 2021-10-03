@@ -1,6 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 import NET from "vanta/dist/vanta.net.min.js";
 import * as THREE from "three";
+
+// Nice use of a custom component for your Vanta animation +1
+// One detail though, Vanta eat a lof of resources, so i will mix it with a custom hook for detecting media queries,
+// in order to skip the 3d animation on mobile devices. (tables are ok though)
 export default function Vanta({ children }) {
   const [vantaEffect, setVantaEffect] = useState(0);
   const vantaRef = useRef(null);
